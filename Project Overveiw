@@ -1,0 +1,72 @@
+PROBLEM DEFINITION
+In contemporary organizational structures, efficient management of employee 
+time and attendance stands as a critical component for ensuring operational 
+productivity and resource optimization. However, manual tracking and 
+management of employee work hours, overtime, attendance, and absences pose 
+significant challenges, including data inaccuracies, inefficiencies, and resource 
+wastage.
+The absence of a centralized and automated system for managing employee 
+time-related data can lead to several issues:
+1.Data Inconsistencies: Manual recording of employee time and attendance 
+data is prone to errors, resulting in inconsistencies in payroll processing, 
+performance evaluation, and resource allocation.
+2.Inefficient Resource Utilization: Without accurate insights into employee 
+working hours, organizations may struggle to allocate resources effectively, 
+leading to underutilization or overutilization of manpower.
+3.Lack of Transparency: Employees may perceive unfairness or bias in 
+attendance tracking and overtime calculation processes, leading to decreased 
+morale and motivation within the workforce.
+4.Compliance Risks: Manual timekeeping processes may fail to adhere to 
+labour laws and regulations regarding working hours, breaks, and overtime 
+compensation, exposing organizations to legal liabilities and penalties.
+5.Operational Inefficiencies: The absence of a centralized database for 
+managing employee time-related data may result in administrative overheads, 
+redundant data entry, and delays in decision-making processes.
+To address these challenges, there is a pressing need for the development and 
+implementation of a comprehensive database system capable of efficiently 
+managing employee time and attendance data. Such a system should automate 
+timekeeping processes, provide real-time insights into workforce productivity, 
+ensure compliance with regulatory requirements, and enhance overall 
+operational efficiency.
+
+//code explaination
+Key Components
+Database Creation:
+Database Name: emptime
+Tables:
+emptime: Stores employee work hours, overtime, attendance, and absenteeism.
+
+Columns:
+SRL_NO: Serial number (identifier)
+empid: Employee ID
+empname: Employee name
+WORKINGHRS: Total working hours
+OVERTIME: Overtime hours
+ATTENDENCE: Number of days attended
+ABSENT: Number of days absent
+empdetails: Stores detailed information about employees including email and phone number.
+
+Columns:
+srl_no: Serial number (identifier)
+empid: Employee ID
+empname: Employee name
+emailid: Employee email address
+phonenumber: Employee phone number
+Operations Performed
+Data Insertion:
+
+Inserted records into both emptime and empdetails tables.
+Data Update:
+
+Updated the SRL_NO for Sanjeev in emptime.
+Changed the empname for empid = 'ec113' to 'Lincon' in empdetails.
+Data Deletion:
+
+Deleted the record with empid = 'me435' from emptime.
+Data Querying:
+
+Retrieved all records from emptime and empdetails.
+Ordered the results by SRL_NO.
+Table Dropping:
+
+Dropped the empdetails table after updating the data.
