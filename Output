@@ -1,0 +1,56 @@
+(SELECT * FROM emptime;)
+
+SRL_NO | empid | empname  | WORKINGHRS | OVERTIME | ATTENDENCE | ABSENT
+-------|-------|----------|------------|----------|------------|-------
+1      | ec113 | Lincon   | 1904       | 56       | 231        | 20
+2      | cs235 | Rahul    | 1925       | 45       | 235        | 16
+4      | ec114 | Sunayana | 1829       | 29       | 225        | 26
+5      | ds186 | Sanjeev  | 1789       | 69       | 215        | 36
+6      | ts031 | Davinci  | 1973       | 45       | 241        | 10
+7      | ar567 | Hari     | 1968       | 64       | 238        | 13
+8      | cs289 | Chinnu   | 2006       | 70       | 242        | 9
+9      | ca758 | Velu     | 1701       | 69       | 204        | 47
+10     | cv942 | Seeta    | 1845       | 85       | 220        | 31
+
+(SELECT * FROM emptime ORDER BY SRL_NO;)
+SRL_NO | empid | empname  | WORKINGHRS | OVERTIME | ATTENDENCE | ABSENT
+-------|-------|----------|------------|----------|------------|-------
+1      | ec113 | Lincon   | 1904       | 56       | 231        | 20
+2      | cs235 | Rahul    | 1925       | 45       | 235        | 16
+4      | ec114 | Sunayana | 1829       | 29       | 225        | 26
+5      | ds186 | Sanjeev  | 1789       | 69       | 215        | 36
+6      | ts031 | Davinci  | 1973       | 45       | 241        | 10
+7      | ar567 | Hari     | 1968       | 64       | 238        | 13
+8      | cs289 | Chinnu   | 2006       | 70       | 242        | 9
+9      | ca758 | Velu     | 1701       | 69       | 204        | 47
+10     | cv942 | Seeta    | 1845       | 85       | 220        | 31
+
+(SELECT * FROM empdetails ORDER BY srl_no;)
+srl_no | empid | empname  | emailid                   | phonenumber
+-------|-------|----------|---------------------------|-------------
+1      | ec113 | Lincon   | lincon13425@emp.com       | 7562891563
+2      | cs235 | Rahul    | rahuldec182004@emp.com    | 7864533567
+3      | me435 | Chavan   | chavanmar171993@emp.com   | 7897456345
+4      | ec114 | Sunayana | sunayanaj28112006@emp.com | 7686546345
+5      | ds186 | Sanjeev  | sanjeev@emp.com           | 7895462341
+6      | ts031 | Davinci  | davinci2398@emp.com       | 7686453675
+7      | ec113 | Hari     | harikrishna@emp.com       | 7685643565
+8      | cs289 | Chinnu   | chinnu1912@emp.com        | 7585362457
+9      | ca758 | Velu     | velu2503@emp.com          | 7869546345
+10     | cv942 | Seeta    | seeta15@emp.com           | 7869654352
+
+(SELECT * FROM empdetails ORDER BY srl_no;)
+srl_no | empid | empname  | emailid                   | phonenumber
+-------|-------|----------|---------------------------|-------------
+1      | ec113 | Lincon   | lincon13425@emp.com       | 7562891563
+2      | cs235 | Rahul    | rahuldec182004@emp.com    | 7864533567
+3      | me435 | Chavan   | chavanmar171993@emp.com   | 7897456345
+4      | ec114 | Sunayana | sunayanaj28112006@emp.com | 7686546345
+5      | ds186 | Sanjeev  | sanjeev@emp.com           | 7895462341
+6      | ts031 | Davinci  | davinci2398@emp.com       | 7686453675
+7      | ec113 | Lincon   | harikrishna@emp.com       | 7685643565
+8      | cs289 | Chinnu   | chinnu1912@emp.com        | 7585362457
+9      | ca758 | Velu     | velu2503@emp.com          | 7869546345
+10     | cv942 | Seeta    | seeta15@emp.com           | 7869654352
+
+
